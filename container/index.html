@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>web-folio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+    <!-- poppins -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Tilt+Neon&display=swap"
+        rel="stylesheet">
+
+    <!-- poppins -->
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">FOLIO <b>.</b></div>
+            <ul class="navItems">
+                <li><a href="#">Home</a></li>
+                <li><a href="">Skills</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Blog</a></li>
+            </ul>
+
+            <div class="links">
+                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href=""><i class="fa-brands fa-facebook"></i></a>
+                <a href=""><i class="fa-brands fa-twitter"></i></a>
+            </div>
+        </nav>
+
+
+        <div class="wrapper">
+            <div class="cols cols0">
+                <span class="topline">Hello</span>
+                <h1>I'm <span class="multiText"></span></h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis, est?</p>
+                <div class="btns">
+                    <button onclick="cvdownload()">Download CV</button>
+                    <button>Hire Me</button>
+                </div>
+            </div>
+            <div class="cols cols1">
+                <div class="img-box">
+                    <img src="img/pur-bg.png" alt="" id="splash">
+                    <img src="img/pic2.png" alt="">
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="cv.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+    <script>
+        var typingEffect = new Typed(".multiText", {
+            strings: ['Coder', 'web-developer', 'student'],
+            loop: true,
+            typeSpeed: 100,
+            backSpeed: 80,
+            backDelay: 1500
+        });
+    </script>
+
+</body>
+
+</html>
